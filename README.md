@@ -10,7 +10,10 @@ A simple tool for evaluation systems for the translation of non-standard (most o
 }
 ```
 
-## Function
+Authors: Gregor Donaj and Mirjam Sepesy Maučec
+Licence: MIT
+
+# Function
 
 This tools compares text segments from all 3 files and checks wheater the conversion is done correctly. If not, it counts errors that are categorized into the following categories:
 - Missing conversion -- the literal and standard forms of a word are different, but the normalization algorithm did not convert the word, i.e., the word remained in literal form.
@@ -21,11 +24,11 @@ This tools compares text segments from all 3 files and checks wheater the conver
 
 Additionaly, it also shows the percentage of words that did not need conversion (non-standard form is identical to standard form) and can perform 2 statistical tests if several testfiles are provided.
 
-## Requirements
+# Requirements
 
 The requirements are: python3 with the following packages: numpy, python_Levenshtein. Use `requirements.txt`.
 
-## Usage
+# Usage
 
 To use the tool the following files are needed: 
 - the input file with non-standard text segments, one per line;
