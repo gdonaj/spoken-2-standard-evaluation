@@ -18,7 +18,9 @@ This tools compares text segments from all 3 files and checks wheater the conver
 - Unwarranted conversions -- the literal and standard forms of a word are the same, but the normalization algorithm made a conversion, although none was needed.
 - Inserted words -- the normalization algorithm produced more words on its output than there were given on the input.
 - Deleted words -- the normalization algorithm produced fewer words on its output than there were given on the input.
+
 Additionaly, it also shows the percentage of words that did not need conversion (non-standard form is identical to standard form) and can perform 2 statistical tests if several testfiles are provided.
+
 ## Requirements
 
 The requirements are: python3 with the following packages: numpy, python_Levenshtein. Use `requirements.txt`.
