@@ -33,7 +33,17 @@ python spk2std-evaluation input-form.txt standard-form.txt system-1-output.txt s
 
 To perform statistical test, use the corresponding flags for one or both tests: --ar for approximate randomization and --br for bootstrap resampling. The number of trials/bootstraps for each test can be specified with the flags --ar-n and --br-n. Default values are 1000.
 ``` bash
-python spk2std-evaluation --ar --br --ar-n 10000 --br-n 10000 input-form.txt standard-form.txt system-1-output.txt system-2-output.txt system-3-output.txt ...
+python spk2std-evaluation --ar --br --ar-n 10000 --br-n 10000 \
+                          input-form.txt standard-form.txt \
+                          system-1-output.txt system-2-output.txt system-3-output.txt ...
+```
+
+To get results in the form of a latex table, use the --latex flag with a filename. To get the visualization of errors in an HTML file, you the --html flag with a filename. For exmaple:
+``` bash
+python spk2std-evaluation --ar --br --ar-n 10000 --br-n 10000 \
+                          --latex output.tex --html output.html \
+                          input-form.txt standard-form.txt \
+                          system-1-output.txt system-2-output.txt system-3-output.txt ...
 ```
 
 
