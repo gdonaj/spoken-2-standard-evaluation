@@ -1,18 +1,10 @@
 # spoken-2-standard-evaluation
 
-A simple tool for evaluation systems for the translation of non-standard (most often spoken) form of language to the standard form. If you are using this tool in your research, please cite as:
-
-``` bibtex
-@article{todo,
-  title = {...},
-  author = {...},
-  journal = {...},
-}
-```
-
 Authors: Gregor Donaj and Mirjam Sepesy Maučec
 
 Licence: MIT
+
+A simple tool for evaluation systems for the translation of non-standard (most often spoken) form of language to the standard form. If you are using this tool in your research, please cite us. The paper describind this tool is currently still in the publication process. We will provide the citation as soos as it will be published. In the meantime, please write me at gregor.donaj@um.si.
 
 # Function
 
@@ -38,27 +30,27 @@ To use the tool the following files are needed:
 
 To perform the evaluation, run the following command:
 ``` bash
-python spk2std-evaluation input-form.txt standard-form.txt system-output.txt
+python spk2std-evaluation.py input-form.txt standard-form.txt system-output.txt
 ```
 
 To perform the evaluation of several systems, run the command with all output files:
 ``` bash
-python spk2std-evaluation input-form.txt standard-form.txt system-1-output.txt system-2-output.txt system-3-output.txt ...
+python spk2std-evaluation.py input-form.txt standard-form.txt system-1-output.txt system-2-output.txt system-3-output.txt ...
 ```
 
 To perform statistical test, use the corresponding flags for one or both tests: `--ar` for approximate randomization and `--br` for bootstrap resampling. The number of trials/bootstraps for each test can be specified with the flags `--ar-n` and `--br-n`. Default values are 1000.
 ``` bash
-python spk2std-evaluation --ar --br --ar-n 10000 --br-n 10000 \
-                          input-form.txt standard-form.txt \
-                          system-1-output.txt system-2-output.txt system-3-output.txt ...
+python spk2std-evaluation.py --ar --br --ar-n 10000 --br-n 10000 \
+                             input-form.txt standard-form.txt \
+                             system-1-output.txt system-2-output.txt system-3-output.txt ...
 ```
 
 To get results in the form of a latex table, use the --latex flag with a filename. To get the visualization of errors in an HTML file, use the --html flag with a filename. For exmaple:
 ``` bash
-python spk2std-evaluation --ar --br --ar-n 10000 --br-n 10000 \
-                          --latex output.tex --html output.html \
-                          input-form.txt standard-form.txt \
-                          system-1-output.txt system-2-output.txt system-3-output.txt ...
+python spk2std-evaluation.py --ar --br --ar-n 10000 --br-n 10000 \
+                             --latex output.tex --html output.html \
+                             input-form.txt standard-form.txt \
+                             system-1-output.txt system-2-output.txt system-3-output.txt ...
 ```
 
 
