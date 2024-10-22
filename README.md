@@ -4,7 +4,27 @@ Authors: Gregor Donaj and Mirjam Sepesy Maučec
 
 Licence: MIT
 
-A simple tool for evaluation systems for the translation of non-standard (most often spoken) form of language to the standard form. If you are using this tool in your research, please cite us. The paper describind this tool is currently still in the publication process. We will provide the citation as soos as it will be published. In the meantime, please write me at gregor.donaj@um.si.
+A simple tool for evaluation systems for the translation of non-standard (most often spoken) form of language to the standard form. If you are using this tool in your research, please cite us: https://www.mdpi.com/2076-3417/14/20/9515
+
+Cite as:
+
+```
+@Article{app14209515,
+  AUTHOR = {Sepesy Maučec, Mirjam and Verdonik, Darinka and Donaj, Gregor},
+  TITLE = {Sequence-to-Sequence Models and Their Evaluation for Spoken Language Normalization of Slovenian},
+  JOURNAL = {Applied Sciences},
+  VOLUME = {14},
+  YEAR = {2024},
+  NUMBER = {20},
+  ARTICLE-NUMBER = {9515},
+  URL = {https://www.mdpi.com/2076-3417/14/20/9515},
+  ISSN = {2076-3417},
+  DOI = {10.3390/app14209515}
+}
+```
+
+
+
 
 # Function
 
